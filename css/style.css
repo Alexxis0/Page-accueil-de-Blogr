@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+:root {
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body .header {
+  padding: 40px 100px 0px 100px;
+  color: hsl(0deg, 0%, 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff8f70), color-stop(#ff7e66), color-stop(#ff6c5e), color-stop(#ff5758), to(#ff3d54));
+  background-image: linear-gradient(to right, #ff8f70, #ff7e66, #ff6c5e, #ff5758, #ff3d54);
+  border-radius: 0px 0px 0px 80px;
+  height: 350px;
+}
+body .header_img {
+  position: absolute;
+  left: 0;
+  width: 800px;
+}
+body .header_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px;
+}
+body .header_nav_logo {
+  margin-right: 70px;
+}
+body .header_nav_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+body .header_nav_menu_h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .header_nav_menu_h2 .title_nav {
+  padding-right: 5px;
+  cursor: pointer;
+}
+body .header_nav_menu_h2 .arrow_bottom {
+  margin-right: 30px;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+}
+body .header_nav input {
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+}
+body .header_nav .login {
+  background-color: transparent;
+  color: hsl(0deg, 0%, 100%);
+  margin-right: 10px;
+}
+body .header_nav .sign_up {
+  background-color: hsl(0deg, 0%, 100%);
+  color: #ff3d54;
+  padding: 10px 25px;
+  font-weight: 700;
+}
+body .header_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .header_section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+body .header_section p {
+  font-family: "Overpass", sans-serif;
+  margin-bottom: 30px;
+}
+body .header_section_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 280px;
+}
+body .header_section_input input {
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+}
+body .header_section_input .start_input {
+  border: none;
+  background-color: hsl(0deg, 0%, 100%);
+  color: #ff3d54;
+}
+body .header_section_input .learn_input {
+  background-color: transparent;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+}
