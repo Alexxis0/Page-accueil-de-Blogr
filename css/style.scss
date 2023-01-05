@@ -32,22 +32,21 @@ body {
     .header {
         padding: 40px 100px 0px 100px;
         color: $White;
-        background-image: linear-gradient(to right, #ff8f70, #ff7e66, #ff6c5e, #ff5758, #ff3d54);
+        background: url(../images/bg-pattern-intro-desktop.svg), linear-gradient(to right, #ff8f70, #ff7e66, #ff6c5e, #ff5758, #ff3d54);
+        background-position-y: 50%;
+        background-position-x: 14.5%;
+        background-repeat: no-repeat;
+        background-size: 2900px, 100%;
         border-radius: 0px 0px 0px 80px;
-        height: 350px;
+        height: 380px;
+        margin-bottom: 20px;
 
-        &_img {
-            position: absolute;
-            left: 0;
 
-            width: 800px;
-            
-        }
 
         &_nav {
             display: flex;
             align-items: center;
-            margin-bottom: 70px;
+            margin-bottom: 80px;
 
             &_logo {
                 margin-right: 70px;
@@ -144,6 +143,56 @@ body {
                 border: 1px solid $White;
                 color: $White;
             }
+        }
+
+    }
+
+    .section {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 0px 0px 0px 100px;
+
+
+        .img_editor_illustration {
+            position: absolute;
+            right: -210px;
+            top: 0;
+            width: 55%;
+
+        }
+
+        &_text {
+            width: 34%;
+            margin-top: 200px;
+        }
+
+        &_title {
+            position: absolute;
+            left: 50%;
+            top: 550px;
+            transform: translate(-50%, -50%);
+            font-family: 'Overpass', sans-serif;
+            font-weight: 600;
+            font-size: 2rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            color: $Very-dark-black-blue;
+        }
+
+        &_title_h3 {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: $Very-dark-black-blue;
+        }
+
+        &_paragraphe {
+            font-family: 'Overpass', sans-serif;
+            margin-bottom: 50px;
+            line-height: 25px;
+            color: $Very-dark-grayish-blue;
         }
 
     }

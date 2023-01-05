@@ -7,15 +7,15 @@
 body .header {
   padding: 40px 100px 0px 100px;
   color: hsl(0deg, 0%, 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff8f70), color-stop(#ff7e66), color-stop(#ff6c5e), color-stop(#ff5758), to(#ff3d54));
-  background-image: linear-gradient(to right, #ff8f70, #ff7e66, #ff6c5e, #ff5758, #ff3d54);
+  background: url(../images/bg-pattern-intro-desktop.svg), -webkit-gradient(linear, left top, right top, from(#ff8f70), color-stop(#ff7e66), color-stop(#ff6c5e), color-stop(#ff5758), to(#ff3d54));
+  background: url(../images/bg-pattern-intro-desktop.svg), linear-gradient(to right, #ff8f70, #ff7e66, #ff6c5e, #ff5758, #ff3d54);
+  background-position-y: 50%;
+  background-position-x: 14.5%;
+  background-repeat: no-repeat;
+  background-size: 2900px, 100%;
   border-radius: 0px 0px 0px 80px;
-  height: 350px;
-}
-body .header_img {
-  position: absolute;
-  left: 0;
-  width: 800px;
+  height: 380px;
+  margin-bottom: 20px;
 }
 body .header_nav {
   display: -webkit-box;
@@ -24,7 +24,7 @@ body .header_nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 body .header_nav_logo {
   margin-right: 70px;
@@ -122,4 +122,54 @@ body .header_section_input .learn_input {
   background-color: transparent;
   border: 1px solid hsl(0deg, 0%, 100%);
   color: hsl(0deg, 0%, 100%);
+}
+body .section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 0px 0px 100px;
+}
+body .section .img_editor_illustration {
+  position: absolute;
+  right: -210px;
+  top: 0;
+  width: 55%;
+}
+body .section_text {
+  width: 34%;
+  margin-top: 200px;
+}
+body .section_title {
+  position: absolute;
+  left: 50%;
+  top: 550px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: hsl(240deg, 10%, 16%);
+}
+body .section_title_h3 {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: hsl(240deg, 10%, 16%);
+}
+body .section_paragraphe {
+  font-family: "Overpass", sans-serif;
+  margin-bottom: 50px;
+  line-height: 25px;
+  color: hsl(207deg, 13%, 34%);
 }
