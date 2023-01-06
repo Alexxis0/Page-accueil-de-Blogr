@@ -7,8 +7,8 @@
 body .header {
   padding: 40px 100px 0px 100px;
   color: hsl(0deg, 0%, 100%);
-  background: url(../images/bg-pattern-intro-desktop.svg), -webkit-gradient(linear, left top, right top, from(#ff8f70), color-stop(#ff7e66), color-stop(#ff6c5e), color-stop(#ff5758), to(#ff3d54));
-  background: url(../images/bg-pattern-intro-desktop.svg), linear-gradient(to right, #ff8f70, #ff7e66, #ff6c5e, #ff5758, #ff3d54);
+  background-image: url(../images/bg-pattern-intro-desktop.svg), -webkit-gradient(linear, left top, right top, from(#ff8f70), color-stop(#ff7e66), color-stop(#ff6c5e), color-stop(#ff5758), to(#ff3d54));
+  background-image: url(../images/bg-pattern-intro-desktop.svg), linear-gradient(to right, #ff8f70, #ff7e66, #ff6c5e, #ff5758, #ff3d54);
   background-position-y: 50%;
   background-position-x: 14.5%;
   background-repeat: no-repeat;
@@ -89,7 +89,7 @@ body .header_section {
           align-items: center;
 }
 body .header_section h3 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-bottom: 20px;
 }
 body .header_section p {
@@ -128,30 +128,24 @@ body .section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background: url("../images/illustration-editor-desktop.svg") no-repeat;
+  background-size: 770px;
+  background-position: 873px 60px;
   padding: 0px 0px 0px 100px;
-}
-body .section .img_editor_illustration {
-  position: absolute;
-  right: -210px;
-  top: 0;
-  width: 55%;
 }
 body .section_text {
   width: 34%;
-  margin-top: 200px;
+  margin-top: 260px;
 }
 body .section_title {
   position: absolute;
   left: 50%;
-  top: 550px;
+  top: 590px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-family: "Overpass", sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,6 +157,7 @@ body .section_title {
 }
 body .section_title_h3 {
   font-family: "Overpass", sans-serif;
+  font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 20px;
   color: hsl(240deg, 10%, 16%);
