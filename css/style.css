@@ -76,6 +76,10 @@ body .header_nav .sign_up {
   padding: 10px 25px;
   font-weight: 700;
 }
+body .header_nav .sign_up:hover {
+  background-color: hsla(0deg, 0%, 100%, 0.26);
+  color: hsl(0deg, 0%, 100%);
+}
 body .header_section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,10 +122,18 @@ body .header_section_input .start_input {
   background-color: hsl(0deg, 0%, 100%);
   color: #ff3d54;
 }
+body .header_section_input .start_input:hover {
+  background-color: hsla(0deg, 0%, 100%, 0.26);
+  color: hsl(0deg, 0%, 100%);
+}
 body .header_section_input .learn_input {
   background-color: transparent;
   border: 1px solid hsl(0deg, 0%, 100%);
   color: hsl(0deg, 0%, 100%);
+}
+body .header_section_input .learn_input:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: #ff3d54;
 }
 body .section {
   position: relative;
@@ -271,19 +283,15 @@ body .footer_container h5 {
   font-weight: 500;
   margin-bottom: 35px;
 }
-body .footer_container p {
+body .footer_container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: hsl(240deg, 2%, 79%);
   margin-bottom: 20px;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  cursor: pointer;
 }
-body .footer_container p:hover::after {
-  content: "";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 1px;
-  background-color: hsl(0deg, 0%, 100%);
-  border-radius: 1px;
+body .footer_container a:hover {
+  text-decoration: underline;
 }

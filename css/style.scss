@@ -99,6 +99,10 @@ body {
                 color: $Light-red;
                 padding: 10px 25px;
                 font-weight: 700;
+                &:hover{
+                    background-color: hsla(0, 0%, 100%, 0.26);
+                    color: $White;
+                }
             }
         }
     }
@@ -136,12 +140,20 @@ body {
                 border: none;
                 background-color: $White;
                 color: $Light-red;
+                &:hover{
+                    background-color: hsla(0, 0%, 100%, 0.26);
+                    color: $White;
+                }
             }
 
             .learn_input {
                 background-color: transparent;
                 border: 1px solid $White;
                 color: $White;
+                &:hover{
+                    background-color: $White;
+                    color: $Light-red;
+                }
             }
         }
 
@@ -293,21 +305,14 @@ body {
                 margin-bottom: 35px;
             }
 
-            p {
+            a {
+                display: flex;
                 color: $Grayish-blue;
                 margin-bottom: 20px;
                 flex-shrink: 1;
-                cursor: pointer;
 
                 &:hover {
-                    &::after {
-                        content: "";
-                        display: flex;
-                        height: 1px;
-                        background-color: $White;
-                        border-radius: 1px;
-
-                    }
+                    text-decoration: underline;
                 }
             }
         }
