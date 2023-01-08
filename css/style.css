@@ -45,42 +45,89 @@ body .header_nav_menu_h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+body .header_nav_menu_h2 .header_menu .link_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-body .header_nav_menu_h2 .title_nav {
+body .header_nav_menu_h2 .header_menu .link_menu .title_nav {
   padding-right: 5px;
   cursor: pointer;
+  -webkit-transition: all 0.2 ease;
+  transition: all 0.2 ease;
 }
-body .header_nav_menu_h2 .arrow_bottom {
+body .header_nav_menu_h2 .header_menu .link_menu .title_nav_underline {
+  text-decoration: underline;
+}
+body .header_nav_menu_h2 .header_menu .arrow_bottom {
   margin-right: 30px;
   width: 8px;
   height: 8px;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
-body .header_nav input {
+body .header_nav_menu_h2 .header_menu .arrow_bottom_rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+body .header_nav_menu_h2 .menu {
+  display: none;
+}
+body .header_nav_menu_h2 .active_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 80px;
+  width: 80px;
+  background-color: hsl(0deg, 0%, 100%);
+  -webkit-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.49);
+          box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.49);
+  border-radius: 5px;
+  padding: 20px 35px 20px 20px;
+}
+body .header_nav_menu_h2 .active_menu a {
+  color: hsl(240deg, 10%, 16%);
+  margin-bottom: 15px;
+}
+body .header_nav_menu_h2 .active_menu a:last-child {
+  margin-bottom: 0px;
+}
+body .header_nav_menu_h2 .active_menu a:hover {
+  font-weight: 700;
+}
+body .header input {
   border-radius: 20px;
   border: none;
   cursor: pointer;
   font-family: "Ubuntu", sans-serif;
 }
-body .header_nav .login {
+body .header .login {
   background-color: transparent;
   color: hsl(0deg, 0%, 100%);
   margin-right: 10px;
 }
-body .header_nav .sign_up {
+body .header .sign_up {
   background-color: hsl(0deg, 0%, 100%);
   color: #ff3d54;
   padding: 10px 25px;
   font-weight: 700;
 }
-body .header_nav .sign_up:hover {
+body .header .sign_up:hover {
   background-color: hsla(0deg, 0%, 100%, 0.26);
   color: hsl(0deg, 0%, 100%);
 }
-body .header_section {
+
+.header_section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,15 +139,15 @@ body .header_section {
       -ms-flex-align: center;
           align-items: center;
 }
-body .header_section h3 {
+.header_section h3 {
   font-size: 2.4rem;
   margin-bottom: 20px;
 }
-body .header_section p {
+.header_section p {
   font-family: "Overpass", sans-serif;
   margin-bottom: 30px;
 }
-body .header_section_input {
+.header_section_input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,7 +156,7 @@ body .header_section_input {
           justify-content: space-between;
   width: 280px;
 }
-body .header_section_input input {
+.header_section_input input {
   border-radius: 20px;
   padding: 10px 20px;
   font-size: 1rem;
@@ -117,25 +164,26 @@ body .header_section_input input {
   font-family: "Ubuntu", sans-serif;
   cursor: pointer;
 }
-body .header_section_input .start_input {
+.header_section_input .start_input {
   border: none;
   background-color: hsl(0deg, 0%, 100%);
   color: #ff3d54;
 }
-body .header_section_input .start_input:hover {
+.header_section_input .start_input:hover {
   background-color: hsla(0deg, 0%, 100%, 0.26);
   color: hsl(0deg, 0%, 100%);
 }
-body .header_section_input .learn_input {
+.header_section_input .learn_input {
   background-color: transparent;
   border: 1px solid hsl(0deg, 0%, 100%);
   color: hsl(0deg, 0%, 100%);
 }
-body .header_section_input .learn_input:hover {
+.header_section_input .learn_input:hover {
   background-color: hsl(0deg, 0%, 100%);
   color: #ff3d54;
 }
-body .section {
+
+.section {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,12 +193,12 @@ body .section {
   background-position: 873px 60px;
   padding: 0px 0px 0px 100px;
 }
-body .section_text {
+.section_text {
   width: 34%;
   margin-top: 260px;
   margin-bottom: 180px;
 }
-body .section_title {
+.section_title {
   position: absolute;
   left: 50%;
   top: 590px;
@@ -168,20 +216,21 @@ body .section_title {
           justify-content: center;
   color: hsl(237deg, 23%, 32%);
 }
-body .section_title_h3 {
+.section_title_h3 {
   font-family: "Overpass", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 20px;
   color: hsl(237deg, 23%, 32%);
 }
-body .section_paragraphe {
+.section_paragraphe {
   font-family: "Overpass", sans-serif;
   margin-bottom: 50px;
   line-height: 25px;
   color: hsl(207deg, 13%, 34%);
 }
-body .section_state {
+
+.section_state {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,26 +249,27 @@ body .section_state {
   background-size: 1100px;
   background-position: -250px -650px;
 }
-body .section_state img {
+.section_state img {
   position: absolute;
   top: -70px;
   left: 130px;
 }
-body .section_state_text {
+.section_state_text {
   padding-right: 110px;
   width: 35%;
   font-family: "Overpass", sans-serif;
 }
-body .section_state_text h3 {
+.section_state_text h3 {
   font-size: 1.8rem;
   color: hsl(0deg, 0%, 100%);
   margin-bottom: 20px;
 }
-body .section_state_text p {
+.section_state_text p {
   color: hsl(0deg, 0%, 100%);
   line-height: 25px;
 }
-body .section_free {
+
+.section_free {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,39 +284,40 @@ body .section_free {
   margin-top: 250px;
   margin-bottom: 200px;
 }
-body .section_free .img_desktop {
+.section_free .img_desktop {
   position: absolute;
   top: -170px;
   left: -239px;
   width: 100%;
-  height: 900px;
+  height: 700px;
   background-image: url("../images/illustration-laptop-desktop.svg");
   background-repeat: no-repeat;
   background-size: 850px;
 }
-body .section_free_text {
+.section_free_text {
   padding: 0px 138px 0px 0px;
   width: 33%;
   font-family: "Overpass", sans-serif;
 }
-body .section_free_text h3 {
+.section_free_text h3 {
   font-size: 1.8rem;
   color: hsl(237deg, 23%, 32%);
   margin-bottom: 20px;
   font-weight: 600;
 }
-body .section_free_text p {
+.section_free_text p {
   color: hsl(207deg, 13%, 34%);
   line-height: 25px;
   margin-bottom: 60px;
 }
-body .footer {
+
+.footer {
   background-color: hsl(240deg, 10%, 16%);
   border-radius: 0px 80px 0px 0px;
   height: 300px;
   padding: 80px 0px 0px 0px;
 }
-body .footer_container {
+.footer_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,24 +325,22 @@ body .footer_container {
       justify-content: space-around;
   width: 80%;
 }
-body .footer_container img {
+.footer_container img {
   margin-left: 30px;
   height: 30px;
 }
-body .footer_container h5 {
+.footer_container h5 {
   color: hsl(0deg, 0%, 100%);
   font-weight: 500;
   margin-bottom: 35px;
 }
-body .footer_container a {
+.footer_container a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: hsl(240deg, 2%, 79%);
   margin-bottom: 20px;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
 }
-body .footer_container a:hover {
+.footer_container a:hover {
   text-decoration: underline;
 }
