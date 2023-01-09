@@ -188,13 +188,21 @@ body .header .sign_up:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url("../images/illustration-editor-desktop.svg") no-repeat;
-  background-size: 770px;
-  background-position: 873px 60px;
   padding: 0px 0px 0px 100px;
 }
+.section .img_editor_desktop {
+  background-image: url("../images/illustration-editor-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 115%;
+  width: 700px;
+  height: 800px;
+  background-position: 140px;
+  position: absolute;
+  right: 0px;
+  top: 30px;
+}
 .section_text {
-  width: 34%;
+  width: 472px;
   margin-top: 260px;
   margin-bottom: 180px;
 }
