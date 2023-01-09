@@ -41,10 +41,22 @@ body .header_nav_menu {
           justify-content: space-between;
   width: 100%;
 }
+@media screen and (max-width: 1300px) {
+  body .header_nav_menu {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
 body .header_nav_menu_h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 1300px) {
+  body .header_nav_menu_h2 {
+    display: none;
+  }
 }
 body .header_nav_menu_h2 .header_menu .link_menu {
   display: -webkit-box;
@@ -105,26 +117,41 @@ body .header_nav_menu_h2 .active_menu a:last-child {
 body .header_nav_menu_h2 .active_menu a:hover {
   font-weight: 700;
 }
-body .header input {
+body .header_nav_input input {
   border-radius: 20px;
   border: none;
   cursor: pointer;
   font-family: "Ubuntu", sans-serif;
 }
-body .header .login {
+@media screen and (max-width: 1300px) {
+  body .header_nav_input input {
+    display: none;
+  }
+}
+body .header_nav_input .login {
   background-color: transparent;
   color: hsl(0deg, 0%, 100%);
   margin-right: 10px;
 }
-body .header .sign_up {
+body .header_nav_input .sign_up {
   background-color: hsl(0deg, 0%, 100%);
   color: #ff3d54;
   padding: 10px 25px;
   font-weight: 700;
 }
-body .header .sign_up:hover {
+body .header_nav_input .sign_up:hover {
   background-color: hsla(0deg, 0%, 100%, 0.26);
   color: hsl(0deg, 0%, 100%);
+}
+body .header_nav_input .icon_hamburger {
+  display: none;
+}
+@media screen and (max-width: 1300px) {
+  body .header_nav_input .icon_hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header_section {
@@ -188,7 +215,33 @@ body .header .sign_up:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 0px 0px 0px 100px;
+}
+.section .illustration_mobile {
+  display: none;
+}
+@media screen and (max-width: 1300px) {
+  .section .illustration_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 900px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .section {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 0px;
+  }
 }
 .section .img_editor_desktop {
   background-image: url("../images/illustration-editor-desktop.svg");
@@ -201,28 +254,40 @@ body .header .sign_up:hover {
   right: 0px;
   top: 30px;
 }
+@media screen and (max-width: 1300px) {
+  .section .img_editor_desktop {
+    display: none;
+  }
+}
 .section_text {
   width: 472px;
-  margin-top: 260px;
+  margin-top: 130px;
   margin-bottom: 180px;
 }
+@media screen and (max-width: 1300px) {
+  .section_text {
+    margin-top: 70px;
+    width: 60%;
+  }
+}
 .section_title {
-  position: absolute;
-  left: 50%;
-  top: 590px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-family: "Overpass", sans-serif;
-  font-weight: 600;
-  font-size: 2.1rem;
-  font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-top: 100px;
   color: hsl(237deg, 23%, 32%);
+}
+@media screen and (max-width: 1300px) {
+  .section_title {
+    font-size: 2.5rem;
+  }
 }
 .section_title_h3 {
   font-family: "Overpass", sans-serif;
@@ -231,11 +296,25 @@ body .header .sign_up:hover {
   margin-bottom: 20px;
   color: hsl(237deg, 23%, 32%);
 }
+@media screen and (max-width: 1300px) {
+  .section_title_h3 {
+    font-size: 2rem;
+  }
+}
 .section_paragraphe {
   font-family: "Overpass", sans-serif;
   margin-bottom: 50px;
   line-height: 25px;
   color: hsl(207deg, 13%, 34%);
+}
+@media screen and (max-width: 1300px) {
+  .section_paragraphe {
+    font-size: 1.5rem;
+    margin-bottom: 100px;
+  }
+}
+.section_robust .section_paragraphe {
+  margin-bottom: 0px;
 }
 
 .section_state {

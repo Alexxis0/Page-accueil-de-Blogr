@@ -59,7 +59,15 @@ body {
                 justify-content: space-between;
                 width: 100%;
 
+                @media screen and (max-width: 1300px) {
+                    justify-content: end;
+                }
+
+
                 &_h2 {
+                    @media screen and (max-width: 1300px) {
+                        display: none;
+                    }
 
                     display: flex;
 
@@ -125,32 +133,47 @@ body {
                     }
                 }
             }
-        }
 
-        input {
-            border-radius: 20px;
-            border: none;
-            cursor: pointer;
-            font-family: 'Ubuntu', sans-serif;
-        }
+            &_input {
 
+                input {
+                    @media screen and (max-width: 1300px) {
+                        display: none;
+                    }
 
-        .login {
-            background-color: transparent;
-            color: $White;
-            margin-right: 10px;
+                    border-radius: 20px;
+                    border: none;
+                    cursor: pointer;
+                    font-family: 'Ubuntu',
+                    sans-serif;
+                }
 
-        }
+                .login {
+                    background-color: transparent;
+                    color: $White;
+                    margin-right: 10px;
 
-        .sign_up {
-            background-color: $White;
-            color: $Light-red;
-            padding: 10px 25px;
-            font-weight: 700;
+                }
 
-            &:hover {
-                background-color: hsla(0, 0%, 100%, 0.26);
-                color: $White;
+                .sign_up {
+                    background-color: $White;
+                    color: $Light-red;
+                    padding: 10px 25px;
+                    font-weight: 700;
+
+                    &:hover {
+                        background-color: hsla(0, 0%, 100%, 0.26);
+                        color: $White;
+                    }
+                }
+
+                .icon_hamburger {
+                    display: none;
+
+                    @media screen and (max-width: 1300px) {
+                        display: flex;
+                    }
+                }
             }
         }
     }
@@ -210,10 +233,30 @@ body {
 
 }
 
+
 .section {
     position: relative;
     display: flex;
+    flex-direction: column;
     padding: 0px 0px 0px 100px;
+
+    .illustration_mobile {
+        display: none;
+
+        @media screen and (max-width: 1300px) {
+            display: flex;
+            width: 900px;
+            margin-top: 50px;
+        }
+    }
+
+    @media screen and (max-width: 1300px) {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+    }
+
 
     .img_editor_desktop {
         background-image: url("../images/illustration-editor-desktop.svg");
@@ -226,28 +269,38 @@ body {
         right: 0px;
         top: 30px;
 
+        @media screen and (max-width: 1300px) {
+            display: none;
+        }
+
 
 
     }
 
     &_text {
         width: 472px;
-        margin-top: 260px;
+        margin-top: 130px;
         margin-bottom: 180px;
+
+        @media screen and (max-width: 1300px) {
+            margin-top: 70px;
+            width: 60%;
+        }
     }
 
     &_title {
-        position: absolute;
-        left: 50%;
-        top: 590px;
-        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
         font-family: 'Overpass', sans-serif;
         font-weight: 600;
         font-size: 2.1rem;
         font-weight: 600;
-        display: flex;
-        justify-content: center;
+        margin-top: 100px;
         color: $Very-dark-desaturated-blue;
+
+        @media screen and (max-width: 1300px) {
+            font-size: 2.5rem;
+        }
     }
 
     &_title_h3 {
@@ -256,6 +309,10 @@ body {
         font-size: 1.5rem;
         margin-bottom: 20px;
         color: $Very-dark-desaturated-blue;
+
+        @media screen and (max-width: 1300px) {
+            font-size: 2rem;
+        }
     }
 
     &_paragraphe {
@@ -263,6 +320,17 @@ body {
         margin-bottom: 50px;
         line-height: 25px;
         color: $Very-dark-grayish-blue;
+
+        @media screen and (max-width: 1300px) {
+            font-size: 1.5rem;
+            margin-bottom: 100px;
+        }
+    }
+
+    &_robust {
+        .section_paragraphe {
+            margin-bottom: 0px;
+        }
     }
 
 
