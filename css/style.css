@@ -17,6 +17,12 @@ body .header {
   height: 380px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 750px) {
+  body .header {
+    height: 100%;
+    padding-bottom: 80px;
+  }
+}
 body .header_nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,11 +53,6 @@ body .header_nav_menu {
         -ms-flex-pack: end;
             justify-content: end;
   }
-}
-body .header_nav_menu_h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 @media screen and (max-width: 1300px) {
   body .header_nav_menu_h2 {
@@ -170,9 +171,21 @@ body .header_nav_input .icon_hamburger {
   font-size: 2.4rem;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 750px) {
+  .header_section h3 {
+    text-align: center;
+    line-height: 40px;
+  }
+}
 .header_section p {
   font-family: "Overpass", sans-serif;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 750px) {
+  .header_section p {
+    text-align: center;
+    line-height: 20px;
+  }
 }
 .header_section_input {
   display: -webkit-box;
@@ -233,6 +246,16 @@ body .header_nav_input .icon_hamburger {
     margin-top: 50px;
   }
 }
+@media screen and (max-width: 1000px) {
+  .section .illustration_mobile {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .section .illustration_mobile {
+    width: 300px;
+  }
+}
 @media screen and (max-width: 1300px) {
   .section {
     width: 100%;
@@ -268,6 +291,7 @@ body .header_nav_input .icon_hamburger {
   .section_text {
     margin-top: 70px;
     width: 60%;
+    margin-bottom: 400px;
   }
 }
 .section_title {
@@ -336,24 +360,73 @@ body .header_nav_input .icon_hamburger {
   background-size: 1100px;
   background-position: -250px -650px;
 }
+@media screen and (max-width: 1300px) {
+  .section_state {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 700px;
+    background-size: 800px;
+    background-position: center -350px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section_state {
+    background-size: 700px;
+  }
+}
 .section_state img {
   position: absolute;
   top: -70px;
   left: 130px;
+}
+@media screen and (max-width: 1300px) {
+  .section_state img {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: -20px;
+    left: 50%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .section_state img {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: -20px;
+    left: 50%;
+    width: 70%;
+  }
 }
 .section_state_text {
   padding-right: 110px;
   width: 35%;
   font-family: "Overpass", sans-serif;
 }
+@media screen and (max-width: 1300px) {
+  .section_state_text {
+    padding: 0;
+    width: 60%;
+  }
+}
 .section_state_text h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: hsl(0deg, 0%, 100%);
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1300px) {
+  .section_state_text h3 {
+    font-size: 2.5rem;
+  }
 }
 .section_state_text p {
   color: hsl(0deg, 0%, 100%);
   line-height: 25px;
+}
+@media screen and (max-width: 1300px) {
+  .section_state_text p {
+    font-size: 1.5rem;
+  }
 }
 
 .section_free {
@@ -371,6 +444,26 @@ body .header_nav_input .icon_hamburger {
   margin-top: 250px;
   margin-bottom: 200px;
 }
+@media screen and (max-width: 1300px) {
+  .section_free {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .section_free {
+    margin-top: 50px;
+  }
+}
 .section_free .img_desktop {
   position: absolute;
   top: -170px;
@@ -381,10 +474,33 @@ body .header_nav_input .icon_hamburger {
   background-repeat: no-repeat;
   background-size: 850px;
 }
+@media screen and (max-width: 1300px) {
+  .section_free .img_desktop {
+    position: static;
+    background-image: url("../images/illustration-laptop-mobile.svg");
+    background-position: center 0px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .section_free .img_desktop {
+    position: static;
+    background-image: url("../images/illustration-laptop-mobile.svg");
+    background-position: center 0px;
+    background-size: 600px;
+    height: 450px;
+  }
+}
 .section_free_text {
   padding: 0px 138px 0px 0px;
   width: 33%;
   font-family: "Overpass", sans-serif;
+}
+@media screen and (max-width: 1300px) {
+  .section_free_text {
+    padding: 0;
+    width: 50%;
+    text-align: center;
+  }
 }
 .section_free_text h3 {
   font-size: 1.8rem;
@@ -392,10 +508,20 @@ body .header_nav_input .icon_hamburger {
   margin-bottom: 20px;
   font-weight: 600;
 }
+@media screen and (max-width: 1300px) {
+  .section_free_text h3 {
+    font-size: 2.5rem;
+  }
+}
 .section_free_text p {
   color: hsl(207deg, 13%, 34%);
   line-height: 25px;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 1300px) {
+  .section_free_text p {
+    font-size: 1.5rem;
+  }
 }
 
 .footer {
@@ -403,6 +529,12 @@ body .header_nav_input .icon_hamburger {
   border-radius: 0px 80px 0px 0px;
   height: 300px;
   padding: 80px 0px 0px 0px;
+}
+@media screen and (max-width: 750px) {
+  .footer {
+    padding: 50px 0px 0px 0px;
+    height: 100%;
+  }
 }
 .footer_container {
   display: -webkit-box;
@@ -412,14 +544,38 @@ body .header_nav_input .icon_hamburger {
       justify-content: space-around;
   width: 80%;
 }
+@media screen and (max-width: 750px) {
+  .footer_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
 .footer_container img {
   margin-left: 30px;
   height: 30px;
+}
+@media screen and (max-width: 750px) {
+  .footer_container img {
+    margin-bottom: 50px;
+    margin-left: 0;
+  }
 }
 .footer_container h5 {
   color: hsl(0deg, 0%, 100%);
   font-weight: 500;
   margin-bottom: 35px;
+}
+@media screen and (max-width: 750px) {
+  .footer_container h5 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }
 .footer_container a {
   display: -webkit-box;
@@ -428,6 +584,29 @@ body .header_nav_input .icon_hamburger {
   color: hsl(240deg, 2%, 79%);
   margin-bottom: 20px;
 }
+@media screen and (max-width: 750px) {
+  .footer_container a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 15px;
+  }
+}
 .footer_container a:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 750px) {
+  .footer_container .footer_product {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer_container .footer_company {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer_container .footer_connect {
+    margin-bottom: 40px;
+  }
 }
