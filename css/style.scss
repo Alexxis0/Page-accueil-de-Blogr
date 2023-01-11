@@ -40,9 +40,13 @@ body {
         border-radius: 0px 0px 0px 80px;
         height: 380px;
         margin-bottom: 20px;
+
         @media screen and (max-width: 750px) {
             height: 100%;
             padding-bottom: 80px;
+        }
+        @media screen and (max-width: 500px) {
+            padding: 30px 20px 100px 20px;
         }
 
 
@@ -52,8 +56,17 @@ body {
             align-items: center;
             margin-bottom: 80px;
 
+            @media screen and (max-width: 500px) {
+                justify-content: space-between;
+                margin-bottom: 40px;
+            }
+
             &_logo {
                 margin-right: 70px;
+
+                @media screen and (max-width: 500px) {
+                    margin-right: 0;
+                }
             }
 
 
@@ -67,14 +80,14 @@ body {
                     justify-content: end;
                 }
 
-
                 &_h2 {
+                    display: flex;
+
                     @media screen and (max-width: 1300px) {
                         display: none;
                     }
 
                     .header_menu {
-
                         .link_menu {
                             display: flex;
                             align-items: center;
@@ -185,6 +198,10 @@ body {
     flex-direction: column;
     align-items: center;
 
+    @media screen and (max-width: 500px) {
+        width: 100%;
+    }
+
     h3 {
         font-size: 2.4rem;
         margin-bottom: 20px;
@@ -193,11 +210,16 @@ body {
             text-align: center;
             line-height: 40px;
         }
+
+        @media screen and (max-width: 500px) {
+            font-size: 2rem;
+        }
     }
 
     p {
         font-family: 'Overpass', sans-serif;
         margin-bottom: 30px;
+
         @media screen and (max-width: 750px) {
             text-align: center;
             line-height: 20px;
@@ -262,6 +284,7 @@ body {
         @media screen and (max-width: 1000px) {
             width: 500px;
         }
+
         @media screen and (max-width: 750px) {
             width: 300px;
         }
@@ -304,6 +327,9 @@ body {
             width: 60%;
             margin-bottom: 400px;
         }
+        @media screen and (max-width: 750px) {
+            margin-bottom: 250px;
+        }
     }
 
     &_title {
@@ -319,6 +345,10 @@ body {
         @media screen and (max-width: 1300px) {
             font-size: 2.5rem;
         }
+
+        @media screen and (max-width: 500px) {
+            font-size: 2rem;
+        }
     }
 
     &_title_h3 {
@@ -331,6 +361,10 @@ body {
         @media screen and (max-width: 1300px) {
             font-size: 2rem;
         }
+
+        @media screen and (max-width: 500px) {
+            font-size: 1.5rem;
+        }
     }
 
     &_paragraphe {
@@ -342,6 +376,10 @@ body {
         @media screen and (max-width: 1300px) {
             font-size: 1.5rem;
             margin-bottom: 100px;
+        }
+
+        @media screen and (max-width: 500px) {
+            font-size: 1rem;
         }
     }
 
@@ -377,6 +415,9 @@ body {
 
     @media screen and (max-width: 1000px) {
         background-size: 700px;
+    }
+    @media screen and (max-width: 500px) {
+        height: 500px;
     }
 
     img {
@@ -417,6 +458,10 @@ body {
                 font-size: 2.5rem;
             }
 
+            @media screen and (max-width: 500px) {
+                font-size: 2rem;
+            }
+
         }
 
         p {
@@ -425,7 +470,10 @@ body {
 
             @media screen and (max-width: 1300px) {
                 font-size: 1.5rem;
+            }
 
+            @media screen and (max-width: 500px) {
+                font-size: 1rem;
             }
         }
     }
@@ -449,6 +497,7 @@ body {
 
     @media screen and (max-width: 750px) {
         margin-top: 50px;
+        margin-bottom: 100px;
     }
 
     .img_desktop {
@@ -497,6 +546,10 @@ body {
             @media screen and (max-width: 1300px) {
                 font-size: 2.5rem;
             }
+
+            @media screen and (max-width: 500px) {
+                font-size: 2rem;
+            }
         }
 
         p {
@@ -506,6 +559,10 @@ body {
 
             @media screen and (max-width: 1300px) {
                 font-size: 1.5rem;
+            }
+
+            @media screen and (max-width: 500px) {
+                font-size: 1rem;
             }
         }
     }

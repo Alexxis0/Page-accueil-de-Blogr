@@ -23,6 +23,11 @@ body .header {
     padding-bottom: 80px;
   }
 }
+@media screen and (max-width: 500px) {
+  body .header {
+    padding: 30px 20px 100px 20px;
+  }
+}
 body .header_nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,8 +37,21 @@ body .header_nav {
           align-items: center;
   margin-bottom: 80px;
 }
+@media screen and (max-width: 500px) {
+  body .header_nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
 body .header_nav_logo {
   margin-right: 70px;
+}
+@media screen and (max-width: 500px) {
+  body .header_nav_logo {
+    margin-right: 0;
+  }
 }
 body .header_nav_menu {
   display: -webkit-box;
@@ -53,6 +71,11 @@ body .header_nav_menu {
         -ms-flex-pack: end;
             justify-content: end;
   }
+}
+body .header_nav_menu_h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media screen and (max-width: 1300px) {
   body .header_nav_menu_h2 {
@@ -167,6 +190,11 @@ body .header_nav_input .icon_hamburger {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 500px) {
+  .header_section {
+    width: 100%;
+  }
+}
 .header_section h3 {
   font-size: 2.4rem;
   margin-bottom: 20px;
@@ -175,6 +203,11 @@ body .header_nav_input .icon_hamburger {
   .header_section h3 {
     text-align: center;
     line-height: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header_section h3 {
+    font-size: 2rem;
   }
 }
 .header_section p {
@@ -294,6 +327,11 @@ body .header_nav_input .icon_hamburger {
     margin-bottom: 400px;
   }
 }
+@media screen and (max-width: 750px) {
+  .section_text {
+    margin-bottom: 250px;
+  }
+}
 .section_title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,6 +351,11 @@ body .header_nav_input .icon_hamburger {
     font-size: 2.5rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .section_title {
+    font-size: 2rem;
+  }
+}
 .section_title_h3 {
   font-family: "Overpass", sans-serif;
   font-weight: 600;
@@ -325,6 +368,11 @@ body .header_nav_input .icon_hamburger {
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .section_title_h3 {
+    font-size: 1.5rem;
+  }
+}
 .section_paragraphe {
   font-family: "Overpass", sans-serif;
   margin-bottom: 50px;
@@ -335,6 +383,11 @@ body .header_nav_input .icon_hamburger {
   .section_paragraphe {
     font-size: 1.5rem;
     margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section_paragraphe {
+    font-size: 1rem;
   }
 }
 .section_robust .section_paragraphe {
@@ -374,6 +427,11 @@ body .header_nav_input .icon_hamburger {
 @media screen and (max-width: 1000px) {
   .section_state {
     background-size: 700px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section_state {
+    height: 500px;
   }
 }
 .section_state img {
@@ -419,6 +477,11 @@ body .header_nav_input .icon_hamburger {
     font-size: 2.5rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .section_state_text h3 {
+    font-size: 2rem;
+  }
+}
 .section_state_text p {
   color: hsl(0deg, 0%, 100%);
   line-height: 25px;
@@ -426,6 +489,11 @@ body .header_nav_input .icon_hamburger {
 @media screen and (max-width: 1300px) {
   .section_state_text p {
     font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section_state_text p {
+    font-size: 1rem;
   }
 }
 
@@ -462,6 +530,7 @@ body .header_nav_input .icon_hamburger {
 @media screen and (max-width: 750px) {
   .section_free {
     margin-top: 50px;
+    margin-bottom: 100px;
   }
 }
 .section_free .img_desktop {
@@ -513,6 +582,11 @@ body .header_nav_input .icon_hamburger {
     font-size: 2.5rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .section_free_text h3 {
+    font-size: 2rem;
+  }
+}
 .section_free_text p {
   color: hsl(207deg, 13%, 34%);
   line-height: 25px;
@@ -521,6 +595,11 @@ body .header_nav_input .icon_hamburger {
 @media screen and (max-width: 1300px) {
   .section_free_text p {
     font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section_free_text p {
+    font-size: 1rem;
   }
 }
 
