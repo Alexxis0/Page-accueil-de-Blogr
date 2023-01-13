@@ -169,6 +169,7 @@ body .header_nav_input .sign_up:hover {
 }
 body .header_nav_input .icon_hamburger {
   display: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 1300px) {
   body .header_nav_input .icon_hamburger {
@@ -176,6 +177,18 @@ body .header_nav_input .icon_hamburger {
     display: -ms-flexbox;
     display: flex;
   }
+}
+body .header_nav_input .icon_hamburger_close {
+  display: none;
+  cursor: pointer;
+}
+body .header_nav_input .ouvrir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .header_nav_input .fermer {
+  display: none;
 }
 
 .header_section {

@@ -45,6 +45,7 @@ body {
             height: 100%;
             padding-bottom: 80px;
         }
+
         @media screen and (max-width: 500px) {
             padding: 30px 20px 100px 20px;
         }
@@ -183,10 +184,25 @@ body {
 
                 .icon_hamburger {
                     display: none;
+                    cursor: pointer;
 
                     @media screen and (max-width: 1300px) {
                         display: flex;
+
                     }
+                }
+
+                .icon_hamburger_close {
+                    display: none;
+                    cursor: pointer;
+                }
+
+                .ouvrir {
+                    display: flex;
+                }
+
+                .fermer {
+                    display: none;
                 }
             }
         }
@@ -327,6 +343,7 @@ body {
             width: 60%;
             margin-bottom: 400px;
         }
+
         @media screen and (max-width: 750px) {
             margin-bottom: 250px;
         }
@@ -416,6 +433,7 @@ body {
     @media screen and (max-width: 1000px) {
         background-size: 700px;
     }
+
     @media screen and (max-width: 500px) {
         height: 500px;
     }
